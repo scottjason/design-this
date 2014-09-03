@@ -1,7 +1,8 @@
+
 // THE MODULE PATTERN
 
-//
-// USING CLOSURES TO PROVIDE PUBLIC FUNCTIONS ACCESS PRIVATE FUNCTIONS AND VARIABLES.
+// THE MODULE PATTERN USES CLOSURES TO PROVIDE PUBLIC FUNCTIONS
+// ACCESS TO PRIVATE FUNCTIONS AND /VARIABLES.
 
 // this creates a single environment shared by four functions
 
@@ -31,3 +32,5 @@ wordBuilder.addFirst();
 wordBuilder.addSecond();
 wordBuilder.addThird();
 wordBuilder.result(); // => 'SCOTT'
+
+//------------------------------------------------------------------

@@ -1,5 +1,7 @@
 **Sources**: Addy Osmani, Kyle Simpson, Rebecca Murphey, Mozilla Docs, Blogs, Books & Wiki.
 
+------------------------------------------------------------------------
+
 **FIRST-CLASS FUNCTIONS**
 
 - can be stored in variables and data structures
