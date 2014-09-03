@@ -24,5 +24,6 @@ So, _what_ **this** actually references is determined by where a function is cal
 The stack of functions that have been invoked to arrive at the **current execution context**.
 
 ![alt text](https://raw.githubusercontent.com/scottjason/design-this/master/images/ecstack.jpg "From the Blog of David Shariff")
+photo courtesy of: http://davidshariff.com/_
 
 ------------------------------------------------------------------------
