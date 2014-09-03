@@ -3,7 +3,6 @@
 // PRIVATE METHODS WITH CLOSURES
 // USING CLOSURES TO PROVIDE PUBLIC FUNCTIONS ACCESS PRIVATE FUNCTIONS AND VARIABLES.
 
-
 // this creates a single environment shared by four enviorments
 
 var wordBuilder = (function() {
@@ -32,4 +31,4 @@ var wordBuilder = (function() {
 wordBuilder.addFirst();
 wordBuilder.addSecond();
 wordBuilder.addThird();
-wordBuilder.result() // => 'SCOTT'
+wordBuilder.result(); // => 'SCOTT'
