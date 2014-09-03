@@ -79,6 +79,6 @@ var homes = {
   whereAmI: whereAmI
 }
 
-whereAmI( homes.myHome )
+findHome( homes.whereAmI )
 
 
