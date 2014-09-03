@@ -1,7 +1,7 @@
-sources: Addy Osmani, Kyle Simpson, Rebecca Murphey, Mozilla Docs, Blogs, Books & Wiki.
 <p align="center">
     JavaScript Design Patterns, Core Concepts, Implementation
 </p>
+**sources**: Addy Osmani, Kyle Simpson, Rebecca Murphey, Mozilla Docs, Blogs, Books & Wiki.
 
 **../closures-module**
 
