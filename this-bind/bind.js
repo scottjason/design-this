@@ -63,3 +63,22 @@ So the call-site has a context object, and this is an example of implicit bindin
 
 //------------------------------------------------------------------
 
+// binding with callbacks
+
+function whereAmI() {
+  console.log( this.homes.myHome ) // <= call-site "San Francisco"
+}
+
+function findHome( callback ){
+    callback();
+}
+
+var homes = {
+  myHome: "San Francisco",
+  notMyHome: "Alabama",
+  whereAmI: whereAmI
+}
+
+whereAmI( homes.myHome )
+
+
