@@ -9,7 +9,7 @@ var wordBuilder = (function() {
   var aPrivateWord = "SC";
 
   function addChar( character ) {
-    aPrivateWord = aPrivateWord.concat( character )
+    aPrivateWord = aPrivateWord.concat( character );
   }
   return {
     addFirst: function() {
@@ -22,11 +22,10 @@ var wordBuilder = (function() {
       addChar( "T" );
     },
     result: function() {
-      return aPrivateWord
+      return aPrivateWord;
     }
   };
 })();
-
 
 wordBuilder.addFirst();
 wordBuilder.addSecond();

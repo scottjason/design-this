@@ -1,4 +1,4 @@
-sources: books, blogs and wikis.
+**Sources**: Addy Osmani, Kyle Simpson, Rebecca Murphey, Mozilla Docs, Blogs, Books & Wiki.
 
 **FIRST-CLASS FUNCTIONS**
 
@@ -43,3 +43,15 @@ A closure allows a function to access those **free** variables even when invoked
 A closure's behavior is such that an inner function refers to local variables of the outer function.
 
 In other words, the function defined in the closure 'remembers' the environment in which it was created. 
+
+------------------------------------------------------------------------
+
+**THE MODULE PATTERN**
+
+Public functions that can access private functions and variables, using closures.
+
+Helps to keep the units of code for a project both cleanly separated and organized and shield particular parts from the global scope thus reducing the likelihood of our function names conflicting with other functions defined in additional scripts on the page.
+
+The Module pattern encapsulates "privacy", state and organization using closures.
+
+------------------------------------------------------------------------

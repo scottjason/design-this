@@ -14,7 +14,7 @@ function whosThere() {
 
 var dingDong = whosThere();
 // this becomes the closure sayHello();
-console.log(dingDong) // => [Function: sayHello]
+console.log( dingDong ) // => [Function: sayHello]
 
 dingDong(); // => 'Hello Scott. Nice to meet you.'
 // while this returns the return value of the closure function ( the return value of itself )
@@ -45,7 +45,6 @@ function fetchAllUsers() {
     return users;
   };
 }
-
 
 //------------------------------------------------------------------
 
