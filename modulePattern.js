@@ -1,9 +1,9 @@
 // THE MODULE PATTERN
 
-// PRIVATE METHODS WITH CLOSURES
+//
 // USING CLOSURES TO PROVIDE PUBLIC FUNCTIONS ACCESS PRIVATE FUNCTIONS AND VARIABLES.
 
-// this creates a single environment shared by four enviorments
+// this creates a single environment shared by four functions
 
 var wordBuilder = (function() {
   var aPrivateWord = "SC";
