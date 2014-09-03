@@ -16,7 +16,7 @@ The stack of functions that have been invoked to arrive at the **current executi
 photo courtesy of: http://davidshariff.com/_
 
 ------------------------------------------------------------------------
-**this** ( strict mode, default binding, )
+**this** ( strict mode, default binding, implicit binding )
 
 **this** is a runtime binding. It is not a binding defined at the time it was written.
 

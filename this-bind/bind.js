@@ -56,3 +56,10 @@ var nameFirst = {
 }
 
 nameFirst.nameLast.nameMiddle.getName()
+
+/* the call-site uses the nameMiddle to reference the function, so at run time, it's this last object that contains the function reference.
+
+So the call-site has a context object, and this is an example of implicit binding. */
+
+//------------------------------------------------------------------
+
