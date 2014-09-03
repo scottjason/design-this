@@ -3,6 +3,7 @@
 JavaScript Design Patterns, Core Concepts, Implementation.
 
 **closures-module**
+
  -First-Class Functions
  -Free Variables
  -Nested Functions
@@ -13,6 +14,7 @@ JavaScript Design Patterns, Core Concepts, Implementation.
 ------------------------------------------------------------------------
 
 **this-bind**
+
  -this
  -call-site
  -call-stack
