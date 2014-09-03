@@ -2,7 +2,7 @@
 
 JavaScript Design Patterns, Core Concepts, Implementation.
 
-**closures-module**
+**/closures-module**
 
 - first-class functions
 - free variables
@@ -13,7 +13,7 @@ JavaScript Design Patterns, Core Concepts, Implementation.
 
 ------------------------------------------------------------------------
 
-**this-bind**
+**/this-bind**
 
 - this
 - call-site
