@@ -3,6 +3,8 @@
 </p>
 **sources**: Addy Osmani, Kyle Simpson, Rebecca Murphey, Mozilla Docs, Blogs, Books & Wiki.
 
+------------------------------------------------------------------------
+
 **../closures-module**
 
 - first-class functions
