@@ -4,23 +4,23 @@ JavaScript Design Patterns, Core Concepts, Implementation.
 
 **closures-module**
 
- -First-Class Functions
- -Free Variables
- -Nested Functions
- -Lexical Scope
- -Closures
- -The Module Pattern
+- first-class functions
+- free variables
+- nested functions
+- lexical scope
+- closures
+- the module pattern
 
 ------------------------------------------------------------------------
 
 **this-bind**
 
- -this
- -call-site
- -call-stack
- -bind
- -call
- -apply
+- this
+- call-site
+- call-stack
+- bind
+- call
+- apply
 
  ------------------------------------------------------------------------
 
