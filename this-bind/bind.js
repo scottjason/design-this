@@ -1,11 +1,10 @@
-
 // How "this" will point can be found by inspecting the call-site and there are 4 rules that apply.
 
 //------------------------------------------------------------------
 
 // RULE 1:  DEFAULT BINDING
 
-function getName(){
+function getName() {
   console.log(this.name); // => "Scott"
 }
 
@@ -24,7 +23,7 @@ getName();
 // Global objects are only eligible for default binding if the contents of getName() are not // running in strict mode
 
 
-function getName(){
+function getName() {
   "use strict";
   console.log(this.name); // => Cannot read property 'name' of undefined
 }
@@ -35,4 +34,25 @@ getName();
 
 //------------------------------------------------------------------
 
-// RULE 1:  DEFAULT BINDING
+// RULE 2:  IMPLICIT BINDING
+
+function getName() {
+  console.log(this.name) // => 'James'
+}
+
+var nameMiddle = {
+  name: "James",
+  getName: getName
+}
+
+var nameLast = {
+  name: "Austin",
+  nameMiddle: nameMiddle
+}
+
+var nameFirst = {
+  name: "Scott",
+  nameLast: nameLast
+}
+
+nameFirst.nameLast.nameMiddle.getName()
