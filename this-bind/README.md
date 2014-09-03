@@ -1,4 +1,4 @@
-**Sources**: Addy Osmani, Kyle Simpson, Rebecca Murphey, Mozilla Docs, Blogs, Books & Wiki.
+**sources**: Addy Osmani, Kyle Simpson, Rebecca Murphey, Mozilla Docs, Blogs, Books & Wiki.
 
 ------------------------------------------------------------------------
 **this**
