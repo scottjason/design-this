@@ -16,5 +16,23 @@ getName();
 // getName() is called with only reference to itself.
 // this.name resolves to the global variable "name". So the default binding for "this" applied to the function call, points "this" at the global object.
 
+
+// STRICT MODE
+
+// Strict mode applies to entire scripts or to individual functions.
+// Strict mode makes it impossible to accidentally create global variable
+// Global objects are only eligible for default binding if the contents of getName() are not // running in strict mode
+
+
+function getName(){
+  "use strict";
+  console.log(this.name); // => Cannot read property 'name' of undefined
+}
+
+var name = "Scott"
+
+getName();
+
 //------------------------------------------------------------------
 
+// RULE 1:  DEFAULT BINDING
