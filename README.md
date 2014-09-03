@@ -22,6 +22,4 @@ JavaScript Design Patterns, Core Concepts, Implementation.
 - call
 - apply
 
- ------------------------------------------------------------------------
-
  
