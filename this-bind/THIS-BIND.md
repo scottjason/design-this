@@ -13,3 +13,16 @@ Again, **this** is a binding that is created when a function is invoked. What **
 
 ------------------------------------------------------------------------
 **call-site**
+
+The call-site is the location in where a function is called, which is different from a function is declared.
+
+So, _what_ **this** actually references is determined by where a function is called and what **this** _is_ is a binding that occurs at run-time.
+
+------------------------------------------------------------------------
+**call-stack**
+
+The stack of functions that have been invoked to arrive at the **current execution context**.
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/estack.jpg "From the Blog of David Shariff")
+
+------------------------------------------------------------------------
