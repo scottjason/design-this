@@ -46,6 +46,9 @@ function fetchAllUsers() {
   };
 }
 
+allUsers = fetchAllUsers();
+allUsers(); // => returns an array of objects of all users
+
 //------------------------------------------------------------------
 
 // -----------------------------------
