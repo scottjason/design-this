@@ -1,10 +1,7 @@
-// -----------------------------------
 // CLOSURES
-// -----------------------------------
 
 // closure is a special kind of object that combines two things: a function, and the
 // environment in which that function was created.
-
 function whosThere() {
   var name = "Scott";
   return function sayHello() {
@@ -51,9 +48,7 @@ allUsers(); // => returns an array of objects of all users
 
 //------------------------------------------------------------------
 
-// -----------------------------------
 // LEXICAL SCOPING
-// -----------------------------------
 
 // this example differs from the above examples, getData() is called, which calls a nested function, doubleData()
 // nested functions have access to the variables defined in the parent functions.
@@ -73,4 +68,3 @@ function getData() {
 
 // doubleData(); is defined in getData(); only accessible within the body of this parent function
 
-//------------------------------------------------------------------
