@@ -1,5 +1,8 @@
-**sources**: Addy Osmani, Kyle Simpson, Rebecca Murphey, Mozilla Docs, Blogs, Books & Wiki.
-
+<p text-align="center">
+sources 
+Addy Osmani, Kyle Simpson, Rebecca Murphey, Srinivas Rao, 
+Mozilla Docs, Blogs, Books and Wiki.
+</p>
 ------------------------------------------------------------------------
 **call-site**
 
@@ -16,7 +19,8 @@ The stack of functions that have been invoked to arrive at the **current executi
 photo courtesy of: http://davidshariff.com/_
 
 ------------------------------------------------------------------------
-**this** ( strict mode, default binding, implicit binding, callbacks )
+**this** 
+( strict mode, default binding, implicit binding, explicit binding, callbacks )
 
 **this** is a runtime binding. It is not a binding defined at the time it was written.
 
@@ -25,3 +29,34 @@ In other words, **this** is completely contextual and based on the conditions of
 **this** is not a reference to the containing function. It is also not a reference to the functions lexical scope.
 
 Again, **this** is a binding that is created when a function is invoked. What **this** references is determined by the **call-site** where the function is called.
+
+------------------------------------------------------------------------
+
+**How "this" will point can be found by inspecting the call-site and there are four rules that apply, and the rules have precedence:**
+
+------------------------------------------------------------------------
+**1. default binding**
+
+The catch-all default where a function is invoked with no special attachements or references. **this** in this case becomes the glovbal scope. In other words, a standalone function invocation.
+
+_( see examples for **strict mode*** and default binding )_
+------------------------------------------------------------------------
+**2. implicit binding**
+
+When the function invocation has object context. When the function is called, it is preceded by a reference to an object. And this object contains a reference to the function. So when there is a context object for a function reference, it is then the object that is used for the **this** binding.
+
+------------------------------------------------------------------------
+**3. explicit binding**
+
+Where as with implicit binding we had to mutate the object to include a reference on itself to the function, and use this property function reference to indirectly (implicitly) bind this to the object, with explicit binding we can force a function call to use a particular object for the this binding, without putting a property function reference on the object.
+
+Just about every function in JavaScript has **call(..)** and **apply(..)** methods.
+
+The first parameter each takes is the object to use for **this**, hence the **explicit**, because we are out-right defing - on invocation - to what **this** will be bound.
+------------------------------------------------------------------------
+**4. hard binding**
+
+
+
+
+

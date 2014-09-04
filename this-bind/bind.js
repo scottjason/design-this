@@ -20,7 +20,8 @@ getName();
 
 // Strict mode applies to entire scripts or to individual functions.
 // Strict mode makes it impossible to accidentally create global variable
-// Global objects are only eligible for default binding if the contents of getName() are not // running in strict mode
+// Global objects are only eligible for default binding if the contents of getName() are not
+// running in strict mode
 
 
 function getName() {
@@ -37,16 +38,16 @@ getName();
 // RULE 2:  IMPLICIT BINDING
 
 function getName() {
-  console.log(this.name) // => 'James'
+  console.log(this.name) // => 'Lee'
 }
 
 var nameMiddle = {
-  name: "James",
+  name: "Lee",
   getName: getName
 }
 
 var nameLast = {
-  name: "Austin",
+  name: "Jason",
   nameMiddle: nameMiddle
 }
 
@@ -66,7 +67,7 @@ So the call-site has a context object, and this is an example of implicit bindin
 // binding with callbacks
 
 function whereAmI() {
-  console.log( this.homes.myHome ) // <= call-site "San Francisco"
+  console.log( this.homes.myHome ) // <= call-site // it returns => "San Francisco"
 }
 
 function findHome( callback ){
@@ -81,4 +82,21 @@ var homes = {
 
 findHome( homes.whereAmI )
 
+// here we are passing a callback function with an object context. The object points to the whereAmI function
 
+//------------------------------------------------------------------
+
+// RULE 3:  EXPLICIT BINDING
+
+function iDemandThis(){
+    return this.timeForBed // => 'Go to bed!'
+}
+
+var myRules = {
+    timeForBed: "Go to bed!",
+    timeToGetUp: "Wake Up!"
+};
+
+iDemandThis.call( myRules );
+
+// so here we did not need a function reference in the object, we used the call method and passed in the object create force what "this" points to. This is explicit binding.
