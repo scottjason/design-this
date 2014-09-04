@@ -58,6 +58,16 @@ The first parameter each takes is the object to use for **this**, hence the **ex
 **4. hard binding**
 
 
+------------------------------------------------------------------------
+**call(..) and apply(..)**
+
+In regards to binding **this**, which is the first parameter each takes, the result is identical. They act the same way in this regard.
+
+
+
+
+
+
 
 
 
