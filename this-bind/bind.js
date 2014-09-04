@@ -132,5 +132,18 @@ fetchUser.call( users );
 // the second call on line 13 "this" references the object we've explicity passed in.
 
 
-// RULE 4 HARD BINDING => go to : callAndApply.js
+// RULE 4 HARD BINDING
+
+// a pattern based on explicit binding where the reference to "this" is retained.
+// especially useful with DOM manipulation where the window becomes the reference to this
+
+function resultInSpiteOfWindow() {
+  console.log( this.num );
+}
+var numsObject = { num: 10
+};
+var fetchNumber = function() { resultInSpiteOfWindow.call( numsObject );
+};
+fetchNumber(); // => 10
+setTimeout( fetchNumber, 100 ); // => 10 !!!
 

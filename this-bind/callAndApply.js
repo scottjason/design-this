@@ -43,8 +43,6 @@ getCoolness.call(reality, ["my status was just created via the apply(..) method.
 
 //------------------------------------------------------------------
 
-// RULE 4 HARD BINDING
-// a pattern based on explicit binding where the reference to "this" is retained.
 
 // we can use this array to filter what we want, and pass through to another function like this:
 
@@ -73,16 +71,15 @@ filterForPassThrough(userLocation, readyToGetLocation, "Scott's current location
 
 //------------------------------------------------------------------
 
-// here's another example that shows hard binding
-
-
-function getDogABone(tastyBone) {
-  console.log( this.bone, something ); return this.a + something;
+function getaDogABone(arguments) {
+  console.log(this.name + arguments)
+  return this.name + arguments;
 }
-var obj = { bone: };
+var doggy = { name: "William" };
 
-var dogWantsABone = function() {
-return foo.apply( obj, arguments );
+var doggyWantsABone = function() {
+  return getaDogABone.apply( obj, arguments );
 
 };
-var b = bar( "super healthy vegan hipster dog bone" );
+var result = doggyWantsABone(doggy, ["super healthy vegan hipster dog bone"] );
+console.log(result)
