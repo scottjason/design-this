@@ -17,7 +17,7 @@ Mozilla Docs, Blogs, Books and Wiki.
 - nested functions
 - lexical scope
 - closures
-- the module pattern
+- **the module pattern**
 
 ------------------------------------------------------------------------
 
@@ -32,7 +32,7 @@ Mozilla Docs, Blogs, Books and Wiki.
 - implicit binding
 - explicit binding
 - new binding
-- hard binding
+- **the hard binding pattern**
 - call
 - apply
 
