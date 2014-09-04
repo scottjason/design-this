@@ -10,7 +10,7 @@ Mozilla Docs, Blogs, Books and Wiki.
 </p>
 ------------------------------------------------------------------------
 
-**../closures-module**
+**/closures-module**
 
 - first-class functions
 - free variables
@@ -21,7 +21,7 @@ Mozilla Docs, Blogs, Books and Wiki.
 
 ------------------------------------------------------------------------
 
-**../this-bind**
+**/this-bind**
 
 - this
 - call-site
