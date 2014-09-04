@@ -1,8 +1,9 @@
 // The difference bewtween call and apply is in the second parameter,
 // where apply() requires an array as the second parameter.
 
-// Here's a super "explicit" example. Note that call can take a
-// string as the second parameter.
+// Here's an example where on first run "this" points to the global variable 'status'
+// and on second run, via the all method and passing in the objects context, "this"
+// is purposefuly pointed at the object.
 
 var status = "way cool";
 var reality = { status: "even cooler" }
