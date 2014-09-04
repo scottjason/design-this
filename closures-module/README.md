@@ -1,5 +1,6 @@
-<p align="center"> 
-sources<br>
+<p align="center">
+- sources -
+<br>
 Addy Osmani, Kyle Simpson, Rebecca Murphey, Srinivas Rao, 
 Mozilla Docs, Blogs, Books and Wiki.
 </p>
