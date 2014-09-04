@@ -57,6 +57,8 @@ The first parameter each takes is the object to use for **this**, hence the **ex
 ------------------------------------------------------------------------
 **4. hard binding**
 
+A pattern based on explicit binding where the reference to "this" is retained.
+Useful for things like DOM manipulaton where **this** references the window.
 
 ------------------------------------------------------------------------
 **call(..) and apply(..)**

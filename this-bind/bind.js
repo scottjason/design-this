@@ -131,3 +131,6 @@ fetchUser.call( users );
 // the first time on line 12 "this" is in reference to the global var
 // the second call on line 13 "this" references the object we've explicity passed in.
 
+
+// RULE 4 HARD BINDING => go to : callAndApply.js
+
