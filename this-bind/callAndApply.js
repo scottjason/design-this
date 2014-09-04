@@ -29,10 +29,10 @@ getCoolness.call(reality, "now getting status from the object we've explicitly p
 // And via apply() with an array.
 
 var status = "way cool";
-var reality = { status: "even cooler" } // not used
+var reality = { status: "even cooler" } // not used in second invocation
 function getCoolness( message ){
   console.log( message )
-  console.log( this.status ); // => call-stite
+  console.log( this.status ); // => call-site
 }
 
 getCoolness("getting status via referencing global scope, wtihout call()")
@@ -46,26 +46,22 @@ getCoolness.apply(reality, ["my status was just created via the apply(..) method
 
 //------------------------------------------------------------------
 
-
 // we can use this array to filter what we want, and pass through to another function like this:
 
 var userLocation = { currentGeo: "San Francisco" };
 
-function readyToGetLocation( message1, message2 )
-{
-    console.log( message1 + ( this.currentGeo ) + message2 );
+function readyToGetLocation( message1, message2 ) {
+  console.log( message1 + ( this.currentGeo ) + message2 );
 }
 
-function filterForPassThrough( object, callback )
-{
+function filterForPassThrough( object, callback ) {
  // note: arguments is a keyword in JS representing the elements of an array
  // arguments[0] == the object && arguments[1] == the callback
+
     var filteredArr = [];
-    for(var i = 2; i < arguments.length; i++)
-    {
+    for(var i = 2; i < arguments.length; i++) {
         filteredArr.push(arguments[i]);
     }
-
     callback.apply( object, filteredArr ); // passing in the same object (same "this")
 }
 
@@ -74,18 +70,20 @@ filterForPassThrough(userLocation, readyToGetLocation, "Scott's current location
 
 //------------------------------------------------------------------
 
-function getaDogABone(arguments) {
+// and another example of apply where we force what "this" points to
+function getaDogABone( arguments ) {
   return this.name + " loves his " + arguments + "!";
 }
 
 var doggy = { name: "William" };
 
-var doggyWantsABone = function(obj, arguments) {
+var doggyWantsABone = function( obj, arguments ) {
   return getaDogABone.apply( obj, arguments );
 
 };
 
-doggyWantsABone(doggy, ["super healthy vegan hipster dog bone"] );
+doggyWantsABone(doggy, ["super healthy vegan hipster dog bone"]);
+// => 'William loves his super healthy vegan hipster dog bone!'
 
 
 

@@ -101,21 +101,9 @@ iDemandThis.call( myRules );
 
 // so here we did not need a function reference in the object, we used the call method and passed in the object create force what "this" points to. This is explicit binding.
 
-var x = 10;
-var o = { x: 15 };
-
-function f()
-{
-    alert(this.x);
-}
-
-f();
-f.call(o);
-
 //------------------------------------------------------------------
 
 // call(..) and apply(..) => EXPLICIT BINDING
-
 
 var name = "Scott";
 var users = { name: "Jason" };
@@ -148,6 +136,8 @@ var fetchNumber = function() { resultInSpiteOfWindow.call( numsObject ); };
 fetchNumber(); // => 10
 setTimeout( fetchNumber, 100 ); // => 10 !!!
 fetchNumber.call( window ) // 10 !!!!!!!
+
+//------------------------------------------------------------------
 
 // we can also use the built in JS 'bind' method like this:
 function resultInSpiteOfWindow(myArg) {
