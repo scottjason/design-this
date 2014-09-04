@@ -72,16 +72,17 @@ filterForPassThrough(userLocation, readyToGetLocation, "Scott's current location
 //------------------------------------------------------------------
 
 function getaDogABone(arguments) {
-  console.log(this.name + arguments)
-  return this.name + arguments;
+  return this.name + " loves his " + arguments + "!";
 }
+
 var doggy = { name: "William" };
 
-var doggyWantsABone = function() {
+var doggyWantsABone = function(obj, arguments) {
   return getaDogABone.apply( obj, arguments );
 
 };
-var result = doggyWantsABone(doggy, ["super healthy vegan hipster dog bone"] );
-console.log(result)
+
+doggyWantsABone(doggy, ["super healthy vegan hipster dog bone"] );
+
 
 
