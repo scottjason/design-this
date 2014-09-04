@@ -131,6 +131,7 @@ fetchUser.call( users );
 // the first time on line 12 "this" is in reference to the global var
 // the second call on line 13 "this" references the object we've explicity passed in.
 
+//------------------------------------------------------------------
 
 // RULE 4 HARD BINDING
 
@@ -138,12 +139,24 @@ fetchUser.call( users );
 // especially useful with DOM manipulation where the window becomes the reference to this
 
 function resultInSpiteOfWindow() {
-  console.log( this.num );
+  console.log( this.num ); // <= call-site
 }
-var numsObject = { num: 10
-};
-var fetchNumber = function() { resultInSpiteOfWindow.call( numsObject );
-};
+var numsObject = { num: 10 };
+
+var fetchNumber = function() { resultInSpiteOfWindow.call( numsObject ); };
+
 fetchNumber(); // => 10
 setTimeout( fetchNumber, 100 ); // => 10 !!!
+fetchNumber.call( window ) // 10 !!!!!!!
+
+// we can also use the built in JS 'bind' method like this:
+function resultInSpiteOfWindow(myArg) {
+  console.log( this.num, myArg );
+  return this.num + myArg;
+}
+var numsObject = { num: 10 };
+
+var fetchNumber = resultInSpiteOfWindow.bind( numsObject );
+var iStoredtheAboveFunction = fetchNumber( 3 ); // => 10 3
+
 
