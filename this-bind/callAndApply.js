@@ -1,6 +1,8 @@
-// The difference bewtween call and apply is in the second parameter, where  apply() requires an // array as the second parameter.
+// The difference bewtween call and apply is in the second parameter,
+// where apply() requires an array as the second parameter.
 
-// Here's a super "explicit" example, note that call can take a string as the second param
+// Here's a super "explicit" example. Note that call can take a
+// string as the second parameter.
 
 var status = "way cool";
 var reality = { status: "even cooler" }
