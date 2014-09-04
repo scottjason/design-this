@@ -27,15 +27,22 @@ In other words, **this** is completely contextual and based on the conditions of
 
 Again, **this** is a binding that is created when a function is invoked. What **this** references is determined by the **call-site** where the function is called.
 
-**How "this" will point can be found by inspecting the call-site and there are 4 rules that apply:**
+------------------------------------------------------------------------
+
+**How "this" will point can be found by inspecting the call-site and there are four rules that apply, and the rules have precedence:**
+
 ------------------------------------------------------------------------
 **1. default binding**
 
+The catch-all default where a function is invoked with no special attachements or references. **this** in this case becomes the glovbal scope. In other words, a standalone function invocation.
 ------------------------------------------------------------------------
+
 **2. implicit binding**
+
+
 
 ------------------------------------------------------------------------
 **3. explicit binding**
 
-
+Where as with implicit binding we had to mutate the object to include a reference on itself to the function, and use this property function reference to indirectly (implicitly) bind this to the object, with explicit binding we can force a function call to use a particular object for the this binding, without putting a property function reference on the object.
 
