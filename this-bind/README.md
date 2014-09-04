@@ -21,7 +21,6 @@ photo courtesy of: http://davidshariff.com/
 
 ------------------------------------------------------------------------
 **this** 
-( strict mode, default binding, implicit binding, explicit binding, callbacks )
 
 **this** is a runtime binding. It is not a binding defined at the time it was written.
 
@@ -38,9 +37,8 @@ Again, **this** is a binding that is created when a function is invoked. What **
 ------------------------------------------------------------------------
 **1. default binding**
 
-The catch-all default where a function is invoked with no special attachements or references. **this** in this case becomes the glovbal scope. In other words, a standalone function invocation.
+The catch-all default where a function is invoked with no special attachments or references. **this** in this case becomes the global scope. In other words, a standalone function invocation.
 
-_( see examples for **strict mode*** and default binding )_
 ------------------------------------------------------------------------
 **2. implicit binding**
 
@@ -53,12 +51,13 @@ Where as with implicit binding we had to mutate the object to include a referenc
 
 Just about every function in JavaScript has **call(..)** and **apply(..)** methods.
 
-The first parameter each takes is the object to use for **this**, hence the **explicit**, because we are out-right defing - on invocation - to what **this** will be bound.
+The first parameter each takes is the object to use for **this**, hence the **explicit**, because we are out-right defining - on invocation - to what **this** will be bound.
+
 ------------------------------------------------------------------------
-**4. hard binding**
+**4. the hard binding pattern**
 
 A pattern based on explicit binding where the reference to "this" is retained.
-Useful for things like DOM manipulaton where **this** references the window.
+Useful for things like DOM manipulation where **this** references the window.
 
 ------------------------------------------------------------------------
 **call(..) and apply(..)**
@@ -67,27 +66,24 @@ apply() requires an array as the second parameter, but aside from that the two a
 
 In regards to binding **this**, which is the first parameter each takes, the methods and results are the same.
 
-**From the Mozilla Docs**
 
-The apply() method calls a function with a given 'this' value and arguments provided as an array (or an array-like object).
 
-_So the first agument reference what **this** will be and the second will be an array-like object. This is what specifies the arguments that on which the invoked function will behave._
+_**From the Mozilla Docs**_
 
-**From the Mozilla Docs**
+"The apply() method calls a function with a given 'this' value and arguments provided as an array (or an array-like object)."
 
-apply() is very similar to call(), except for the type of arguments it supports.  You can use an arguments array instead of a named set of parameters. With apply, you can use an array literal, for example, 
+_So the first argument reference what **this** will be and the second will be an array-like object. This is what specifies the arguments that on which the invoked function will behave._
+
+_**From the Mozilla Docs**_
+
+"apply() is very similar to call(), except for the type of arguments it supports.  You can use an arguments array instead of a named set of parameters. With apply, you can use an array literal, for example":
+
 ```javascript
 fun.apply(this, ['eat', 'bananas'])
 ```
-or an Array object, for example, 
+
+"or an Array object, for example":
+
 ```javascript
 fun.apply(this, new Array('eat', 'bananas'))
 ```
-------------------------------------------------------------------------
-
-
-
-
-
-
-
