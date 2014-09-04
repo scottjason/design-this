@@ -1,8 +1,11 @@
 <p align="center">
-    JavaScript Design Patterns, Core Concepts, Implementation
+    JavaScript Design Patterns, Core Concepts and Implementation
 </p>
-**sources**: Addy Osmani, Kyle Simpson, Rebecca Murphey, Mozilla Docs, Blogs, Books & Wiki.
-
+<p text-align="center">
+sources 
+Addy Osmani, Kyle Simpson, Rebecca Murphey, Srinivas Rao, 
+Mozilla Docs, Blogs, Books and Wiki.
+</p>
 ------------------------------------------------------------------------
 
 **../closures-module**

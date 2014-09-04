@@ -1,5 +1,8 @@
-**sources**: Addy Osmani, Kyle Simpson, Rebecca Murphey, Mozilla Docs, Blogs, Books & Wiki.
-
+<p text-align="center">
+sources 
+Addy Osmani, Kyle Simpson, Rebecca Murphey, Srinivas Rao, 
+Mozilla Docs, Blogs, Books and Wiki.
+</p>
 ------------------------------------------------------------------------
 **call-site**
 
@@ -35,6 +38,8 @@ Again, **this** is a binding that is created when a function is invoked. What **
 **1. default binding**
 
 The catch-all default where a function is invoked with no special attachements or references. **this** in this case becomes the glovbal scope. In other words, a standalone function invocation.
+
+_( see examples for **strict mode*** and default binding )_
 ------------------------------------------------------------------------
 **2. implicit binding**
 
@@ -48,6 +53,10 @@ Where as with implicit binding we had to mutate the object to include a referenc
 Just about every function in JavaScript has **call(..)** and **apply(..)** methods.
 
 The first parameter each takes is the object to use for **this**, hence the **explicit**, because we are out-right defing - on invocation - to what **this** will be bound.
+------------------------------------------------------------------------
+**4. hard binding**
+
+
 
 
 

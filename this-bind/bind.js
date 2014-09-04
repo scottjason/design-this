@@ -20,7 +20,8 @@ getName();
 
 // Strict mode applies to entire scripts or to individual functions.
 // Strict mode makes it impossible to accidentally create global variable
-// Global objects are only eligible for default binding if the contents of getName() are not // running in strict mode
+// Global objects are only eligible for default binding if the contents of getName() are not
+// running in strict mode
 
 
 function getName() {
@@ -85,6 +86,17 @@ findHome( homes.whereAmI )
 
 //------------------------------------------------------------------
 
-// RULE 2:  EXPLICIT BINDING
+// RULE 3:  EXPLICIT BINDING
 
-Unlike
+function iDemandThis(){
+    return this.timeForBed // => 'Go to bed!'
+}
+
+var myRules = {
+    timeForBed: "Go to bed!",
+    timeToGetUp: "Wake Up!"
+};
+
+iDemandThis.call( myRules );
+
+// so here we did not need a function reference in the object, we used the call method and passed in the object create force what "this" points to. This is explicit binding.
