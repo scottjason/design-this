@@ -26,8 +26,15 @@ Mozilla Docs, Blogs, Books and Wiki.
 - this
 - call-site
 - call-stack
-- bind
+- strict mode
+- callbacks
+- default binding
+- implicit binding
+- explicit binding
+- new binding
+- hard binding
 - call
 - apply
+
 
  
