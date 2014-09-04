@@ -63,6 +63,22 @@ The first parameter each takes is the object to use for **this**, hence the **ex
 
 In regards to binding **this**, which is the first parameter each takes, the result is identical. They act the same way in this regard.
 
+_From the Mozilla Docs:_
+
+**The apply() method calls a function with a given 'this' value and arguments provided as an array (or an array-like object).**
+
+So the first agument reference what **this** will be and the second will be an array-like object. This is what specifies the arguments that on which the invoked function will behave.
+
+_From the Mozilla Docs:_
+apply() is very similar to call(), except for the type of arguments it supports.  You can use an arguments array instead of a named set of parameters. With apply, you can use an array literal, for example, 
+```javascript
+fun.apply(this, ['eat', 'bananas'])
+```
+or an Array object, for example, 
+```javascript
+fun.apply(this, new Array('eat', 'bananas'))
+```
+
 
 
 

@@ -100,3 +100,5 @@ var myRules = {
 iDemandThis.call( myRules );
 
 // so here we did not need a function reference in the object, we used the call method and passed in the object create force what "this" points to. This is explicit binding.
+
+
