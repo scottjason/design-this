@@ -16,7 +16,8 @@ The stack of functions that have been invoked to arrive at the **current executi
 photo courtesy of: http://davidshariff.com/_
 
 ------------------------------------------------------------------------
-**this** ( strict mode, default binding, implicit binding, callbacks )
+**this** 
+( strict mode, default binding, implicit binding, explicit binding, callbacks )
 
 **this** is a runtime binding. It is not a binding defined at the time it was written.
 
@@ -25,3 +26,16 @@ In other words, **this** is completely contextual and based on the conditions of
 **this** is not a reference to the containing function. It is also not a reference to the functions lexical scope.
 
 Again, **this** is a binding that is created when a function is invoked. What **this** references is determined by the **call-site** where the function is called.
+
+**How "this" will point can be found by inspecting the call-site and there are 4 rules that apply:**
+------------------------------------------------------------------------
+**1. default binding**
+
+------------------------------------------------------------------------
+**2. implicit binding**
+
+------------------------------------------------------------------------
+**3. explicit binding**
+
+
+

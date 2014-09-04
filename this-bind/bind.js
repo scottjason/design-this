@@ -81,4 +81,10 @@ var homes = {
 
 findHome( homes.whereAmI )
 
+// here we are passing a callback function with an object context. The object points to the whereAmI function
 
+//------------------------------------------------------------------
+
+// RULE 2:  EXPLICIT BINDING
+
+Unlike
