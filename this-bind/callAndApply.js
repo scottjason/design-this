@@ -2,7 +2,7 @@
 // where apply() requires an array as the second parameter.
 
 // Here's an example where on first run "this" points to the global variable 'status'
-// and on second run, via the all method and passing in the objects context, "this"
+// and on second run, via the .call(..) method where we can pass in the objects context, "this"
 // is purposefuly pointed at the object.
 
 var status = "way cool";
@@ -36,12 +36,12 @@ function getCoolness( message ){
 }
 
 getCoolness("getting status via referencing global scope, wtihout call()")
-getCoolness.call(reality, ["my status was just created via the apply(..) method.I am the apply"])
+getCoolness.apply(reality, ["my status was just created via the apply(..) method.I am the apply"])
 
 // the above logs =>
 // getting status via referencing global scope, wtihout call()
 // way cool
-// [ 'my status was just created via the apply(..) method.I am the apply' ]
+// my status was just created via the apply(..) method.I am the apply
 // even cooler
 
 //------------------------------------------------------------------
