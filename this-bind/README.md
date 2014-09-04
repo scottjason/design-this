@@ -57,19 +57,24 @@ The first parameter each takes is the object to use for **this**, hence the **ex
 ------------------------------------------------------------------------
 **4. hard binding**
 
+A pattern based on explicit binding where the reference to "this" is retained.
+Useful for things like DOM manipulaton where **this** references the window.
 
 ------------------------------------------------------------------------
 **call(..) and apply(..)**
 
-In regards to binding **this**, which is the first parameter each takes, the result is identical. They act the same way in this regard.
+apply() requires an array as the second parameter, but aside from that the two are the same. 
 
-_From the Mozilla Docs:_
+In regards to binding **this**, which is the first parameter each takes, the methods and results are the same.
 
-**The apply() method calls a function with a given 'this' value and arguments provided as an array (or an array-like object).**
+**From the Mozilla Docs**
 
-So the first agument reference what **this** will be and the second will be an array-like object. This is what specifies the arguments that on which the invoked function will behave.
+The apply() method calls a function with a given 'this' value and arguments provided as an array (or an array-like object).
 
-_From the Mozilla Docs:_
+_So the first agument reference what **this** will be and the second will be an array-like object. This is what specifies the arguments that on which the invoked function will behave._
+
+**From the Mozilla Docs**
+
 apply() is very similar to call(), except for the type of arguments it supports.  You can use an arguments array instead of a named set of parameters. With apply, you can use an array literal, for example, 
 ```javascript
 fun.apply(this, ['eat', 'bananas'])
@@ -78,8 +83,7 @@ or an Array object, for example,
 ```javascript
 fun.apply(this, new Array('eat', 'bananas'))
 ```
-
-
+------------------------------------------------------------------------
 
 
 
