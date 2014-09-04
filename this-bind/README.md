@@ -78,8 +78,7 @@ or an Array object, for example,
 ```javascript
 fun.apply(this, new Array('eat', 'bananas'))
 ```
-
-
+------------------------------------------------------------------------
 
 
 

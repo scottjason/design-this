@@ -101,4 +101,51 @@ iDemandThis.call( myRules );
 
 // so here we did not need a function reference in the object, we used the call method and passed in the object create force what "this" points to. This is explicit binding.
 
+var x = 10;
+var o = { x: 15 };
 
+function f()
+{
+    alert(this.x);
+}
+
+f();
+f.call(o);
+
+//------------------------------------------------------------------
+
+// call(..) and apply(..) => EXPLICIT BINDING
+
+
+var name = "Scott";
+var users = { name: "Jason" };
+
+function fetchUser()
+{
+    console.log( this.name ) // => returns Scott and then Jason
+}
+
+fetchUser();
+fetchUser.call( users );
+
+// the first time on line 12 "this" is in reference to the global var
+// the second call on line 13 "this" references the object we've explicity passed in.
+
+// Here's a super "explicit" example ( running this code helps understand what's going on )
+
+var status = "way cool";
+var reality = { status: "even cooler" }
+
+function getCoolness( message ){
+  console.log( message )
+  console.log( this.status ); // => call-stite
+}
+
+getCoolness("getting status from the global scope wtihout call")
+getCoolness.call(reality, "now getting status from the object we've passed in")
+
+// the above logs =>
+// getting status from the global scope wtihout call
+// way cool
+// now getting status from the object we've passed in
+// even cooler
