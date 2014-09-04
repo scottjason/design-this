@@ -131,21 +131,3 @@ fetchUser.call( users );
 // the first time on line 12 "this" is in reference to the global var
 // the second call on line 13 "this" references the object we've explicity passed in.
 
-// Here's a super "explicit" example ( running this code helps understand what's going on )
-
-var status = "way cool";
-var reality = { status: "even cooler" }
-
-function getCoolness( message ){
-  console.log( message )
-  console.log( this.status ); // => call-stite
-}
-
-getCoolness("getting status from the global scope wtihout call")
-getCoolness.call(reality, "now getting status from the object we've passed in")
-
-// the above logs =>
-// getting status from the global scope wtihout call
-// way cool
-// now getting status from the object we've passed in
-// even cooler
