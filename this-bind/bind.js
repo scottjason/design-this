@@ -37,16 +37,16 @@ getName();
 // RULE 2:  IMPLICIT BINDING
 
 function getName() {
-  console.log(this.name) // => 'James'
+  console.log(this.name) // => 'Lee'
 }
 
 var nameMiddle = {
-  name: "James",
+  name: "Lee",
   getName: getName
 }
 
 var nameLast = {
-  name: "Austin",
+  name: "Jason",
   nameMiddle: nameMiddle
 }
 
@@ -66,7 +66,7 @@ So the call-site has a context object, and this is an example of implicit bindin
 // binding with callbacks
 
 function whereAmI() {
-  console.log( this.homes.myHome ) // <= call-site "San Francisco"
+  console.log( this.homes.myHome ) // <= call-site // it returns => "San Francisco"
 }
 
 function findHome( callback ){

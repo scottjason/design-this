@@ -36,13 +36,18 @@ Again, **this** is a binding that is created when a function is invoked. What **
 
 The catch-all default where a function is invoked with no special attachements or references. **this** in this case becomes the glovbal scope. In other words, a standalone function invocation.
 ------------------------------------------------------------------------
-
 **2. implicit binding**
 
-
+When the function invocation has object context. When the function is called, it is preceded by a reference to an object. And this object contains a reference to the function. So when there is a context object for a function reference, it is then the object that is used for the **this** binding.
 
 ------------------------------------------------------------------------
 **3. explicit binding**
 
 Where as with implicit binding we had to mutate the object to include a reference on itself to the function, and use this property function reference to indirectly (implicitly) bind this to the object, with explicit binding we can force a function call to use a particular object for the this binding, without putting a property function reference on the object.
+
+Just about every function in JavaScript has **call(..)** and **apply(..)** methods.
+
+The first parameter each takes is the object to use for **this**, hence the **explicit**, because we are out-right defing - on invocation - to what **this** will be bound.
+
+
 
