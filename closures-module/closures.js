@@ -1,6 +1,6 @@
 // CLOSURES
 
-// closure is a special kind of object that combines two things: a function, and the
+// closures are a special kind of object that combines two things: a function and the
 // environment in which that function was created.
 function whosThere() {
   var name = "Scott";
