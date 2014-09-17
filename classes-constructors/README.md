@@ -26,7 +26,7 @@ Note that the keyword **new** creates a new instance of this class. Without this
 
 -----------------------------------------------------------------------------
 
-**Class Literal Notation**
+**Class Literal Notation and Singleton Objects**
 ```javascript
 var user = {  
     location: "",
