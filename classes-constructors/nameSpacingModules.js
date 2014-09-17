@@ -2,6 +2,7 @@
 var DesignThis = DesignThis || {};
 
 // Declaring a module, so logic is separted into namespaces / modules.
+// Below is an example of the namespacing and the module pattern
 DesignThis.UserModule = (function() {
   // the varial userName and function sendGreeting are private and only accessible inside this module.
   var sendGreeting = function( name, message ) {
