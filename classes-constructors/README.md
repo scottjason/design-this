@@ -14,17 +14,32 @@ first we declare the class
 function User(name) {  
     this.name = name;
 }
-
+```
 then we instantiate a new object
 ```javascript
 var user = new User("Scott");
-user.name; 
+user.name; // "Scott"
 ```
-returns "Scott"
+
+
 Note that the keyword **new** creates a new instance of this class. Without this keyword, the keyword **this** for this object will reference the window.
 
+-----------------------------------------------------------------------------
 
+**Class Literal Notation**
+```javascript
+var user = {  
+    location: "",
+    setLocation: function(location) {
+        this.location = location;
+    }
+}
 
-**Classes using function as a constructor**
+user.setLocation("San Francisco");  
+user.location; // "San Francisco"  
+```
+So here there is no function used define the class. We create a singleton object ( user ) that can be used straightaway without the use of **new**.
+
+Useful when  you don't need to create instances of the class or if it's only needed once in the application.
 
 
