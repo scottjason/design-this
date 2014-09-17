@@ -5,7 +5,7 @@ Addy Osmani, Kyle Simpson, Rebecca Murphey, Srinivas Rao, FrontEnd Journal,
 Mozilla Docs
 </p>
 
-##Unlike Java and Ruby, classes in Javascript are really just functions that are simulating class behavior.  
+#####Unlike Java and Ruby, classes in Javascript are really just functions that are simulating class behavior.  
 
 **Classes using function as a constructor**
 
@@ -41,5 +41,4 @@ user.location; // "San Francisco"
 So here there is no function used define the class. We create a singleton object ( user ) that can be used straightaway without the use of **new**.
 
 Useful when  you don't need to create instances of the class or if it's only needed once in the application.
-
 
