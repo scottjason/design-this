@@ -36,5 +36,14 @@ Mozilla Docs, Blogs, Books and Wiki.
 - call
 - apply
 
+------------------------------------------------------------------------
+
+**/classes-constructors**
+
+- classes using function as a constructor
+- class Literal Notation and Singleton Objects
+- namespacing
+- **namespacing and the module pattern**
+
 
  
