@@ -19,14 +19,18 @@ function declareNum(){
 var anonFunc = function() {
     return "I am an anonymous functional expression."
 };
- 
+```
+```javascript
 var namedFunc = function bar() {
     return "I am a named functional expression."
 };
- 
+```
+
+```javascript
 (function iife() {
-    return 'I am an immediately invoked functional espression.';
+    return 'I am an immediately invoked functional expression.';
 })();
+```
 
 ------------------------------------------------------------------------
 
@@ -42,7 +46,9 @@ before();
 function before(){
     return 10;
 }
+```
 
+```javascript
 function after(){
     return 10;
 }
@@ -57,8 +63,6 @@ The below will not work:
 **closures and nested functions**
 
 Expressions and declarations make more sense in context. They are part of how we create private interfaces with closures.
-
-
 
 
 
