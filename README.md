@@ -32,9 +32,9 @@ Mozilla Docs, Blogs, Books and Wiki.
 - implicit binding
 - explicit binding
 - new binding
-- **the hard binding pattern**
 - call
 - apply
+- **the hard binding pattern**
 
 ------------------------------------------------------------------------
 
@@ -50,7 +50,7 @@ Mozilla Docs, Blogs, Books and Wiki.
 **/expressions-declarations**
 - functional declartions
 - functional expressions
-- **closures and nested functions**
+- **closures, nested functions and variable preservation**
 
 
  

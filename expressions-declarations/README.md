@@ -56,6 +56,8 @@ The below will not work:
 
 **closures and nested functions**
 
+Expressions and declarations make more sense in context. They are part of how we create private interfaces with closures.
+
 
 
 

@@ -1,3 +1,11 @@
+// nested function
+function addSquares(a,b) {
+   function square(x) {
+      return x * x;
+   }
+   return square(a) + square(b);
+}
+
 function init(){
     function run() {
         return 5;
@@ -8,3 +16,4 @@ function init(){
     }
 }
 console.log( init() );
+// returns 10
