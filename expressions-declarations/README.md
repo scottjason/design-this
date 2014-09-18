@@ -21,7 +21,7 @@ var anonFunc = function() {
 };
 ```
 ```javascript
-var namedFunc = function bar() {
+var namedFunc = function someName() {
     return "I am a named functional expression."
 };
 ```
@@ -34,7 +34,7 @@ var namedFunc = function bar() {
 
 ------------------------------------------------------------------------
 
-**key differences**
+**key differences, closures and nested functions**
 
 Function declarations are parsed at pre-execution stage, when the browser 
 prepares to execute the code. So a function declared this way can be called both after and before the definition.
@@ -57,8 +57,15 @@ after();
 
 Function expressions, on the other hand, mean that the function comes as part of a statement. They're are created when the execution flow reaches them. So unlike declarations, they can be used only after they've been executed.
 
-The below will not work:
+The below will **not** work:
 
+```javascript
+namedFunc();
+
+var namedFunc = function someName() {
+    return "I am a named functional expression."
+};
+```
 
 **closures and nested functions**
 
