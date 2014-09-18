@@ -45,5 +45,12 @@ Mozilla Docs, Blogs, Books and Wiki.
 - namespacing
 - **namespacing and the module pattern**
 
+------------------------------------------------------------------------
+
+**/expressions-declarations**
+- functional declartions
+- functional expressions
+- **closures and nested functions**
+
 
  
