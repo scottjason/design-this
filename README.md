@@ -32,9 +32,9 @@ Mozilla Docs, Blogs, Books and Wiki.
 - implicit binding
 - explicit binding
 - new binding
-- **the hard binding pattern**
 - call
 - apply
+- **the hard binding pattern**
 
 ------------------------------------------------------------------------
 
@@ -44,6 +44,13 @@ Mozilla Docs, Blogs, Books and Wiki.
 - class Literal Notation and Singleton Objects
 - namespacing
 - **namespacing and the module pattern**
+
+------------------------------------------------------------------------
+
+**/expressions-declarations**
+- functional declartions
+- functional expressions
+- **closures, nested functions and variable preservation**
 
 
  
