@@ -1,10 +1,14 @@
 // nested function
-function addSquares(a,b) {
-   function square(x) {
-      return x * x;
+function parent( messageOne, messageTwo ) {
+   function nested( message ) {
+      return message.split('').join(' ');
    }
-   return square(a) + square(b);
+   return ( nested(messageOne) + ' ' + nested(messageTwo) ).toUpperCase();
 }
+
+parent('scott', 'jason');
+// => 'S C O T T J A S O N'
+
 
 function init(){
     function run() {
