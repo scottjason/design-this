@@ -42,3 +42,5 @@ So here there is no function used define the class. We create a singleton object
 
 Useful when  you don't need to create instances of the class or if it's only needed once in the application.
 
+
+
