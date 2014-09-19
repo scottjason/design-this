@@ -40,7 +40,6 @@ function capitalize( str ) {
 }
 
 // lets create our object with three chainable methods
-// note that the retun value of this is a reference to the containing object
 var userModule = {
     targetUser: "", // hoisting the targetUser
 
@@ -52,13 +51,14 @@ var userModule = {
             }
         }
         return this;
+        // "this" references the current object
     },
     formatUser: function() {
         if ( this.targetUser ) {
             this.targetUser.fullName = ( capitalize( this.targetUser.firstName ) + ' ' + capitalize( this.targetUser.lastName ) );
         }
-        console.log( this )
         return this;
+        // "this" references the current object
     },
     renderUser: function() {
         if( this.targetUser ){
