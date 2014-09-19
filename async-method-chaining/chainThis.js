@@ -52,25 +52,22 @@ var Human = function() {
 Human.prototype.setName = function( name ) {
   this.name = name;
   return this;
-}
+};
 
 Human.prototype.setGender = function( gender ) {
   this.gender = gender;
   return this;
-}
+};
 
 Human.prototype.setHairColor = function( hairColor ) {
   this.hairColor = hairColor;
   return this;
-}
+};
 
 Human.prototype.save = function(){
-  console.log(
-    'Saving ' + this.name + ' the ' +
-    + this.gender + ' ' + this.hairColor
-  );
+  console.log( 'Saving ' + this.name + ' the ' + this.gender + ' ' + this.hairColor );
     return this;
-}
+};
 
 var austinBourdier = new Human();
 var newPerson = austinBourdier.setName('Austin');
@@ -86,8 +83,9 @@ console.log( newPerson == austinBourdier );
 var austinBourdier = new Human();
 
 austinBourdier.setName('Austin');
-austinBourdier.setColor('Brown');
 austinBourdier.setGender('Male');
+austinBourdier.setHairColor('Brown');
+
 
 austinBourdier.save();
 
@@ -96,8 +94,8 @@ austinBourdier.save();
 // ------------- METHOD CHAINING ---------------
 
 // implementing the chaining pattern:
-var austinBourdier = new Human()
-  .setName('Austin');
-  .setColor('Brown');
-  .setGender('Male');
+new Human()
+  .setName('Austin')
+  .setGender('Male')
+  .setHairColor('Brown')
   .save();
