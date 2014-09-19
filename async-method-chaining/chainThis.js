@@ -38,7 +38,7 @@ austinBourdier.setName('Austin'); // => undefined
 
 // reason being, the setName function has no return value
 
-// ------------- METHOD CHAINING ---------------
+// ------------------------------------------------------
 
 // here's the same example as above, only with a verbose method chaining pattern
 
@@ -76,6 +76,28 @@ var austinBourdier = new Human();
 var newPerson = austinBourdier.setName('Austin');
 newPerson.setGender('Brown')
 
-// let's check if the variable newPerson variable reflects our new object
+// let's check if the variable newPerson reflects our new object
 console.log( newPerson == austinBourdier );
 // true
+
+// ------------------------------------------------------
+
+// so on the hand, while we can do this with no chaining:
+var austinBourdier = new Human();
+
+austinBourdier.setName('Austin');
+austinBourdier.setColor('Brown');
+austinBourdier.setGender('Male');
+
+austinBourdier.save();
+
+
+// we can simplify our code by not storing our new object in a variable and creating these methods on the object itself.
+// ------------- METHOD CHAINING ---------------
+
+// implementing the chaining pattern:
+var austinBourdier = new Human()
+  .setName('Austin');
+  .setColor('Brown');
+  .setGender('Male');
+  .save();
