@@ -40,7 +40,8 @@ austinBourdier.setName('Austin'); // => undefined
 
 // ------------------------------------------------------
 
-// here's the same example as above, only each method will return its reference to 'this'
+// here's the same example as above, only each method will return "this", where "this" references the 
+// the object that the function is a method of
 
 var Human = function() {
   this.name = 'Scott';
@@ -79,7 +80,7 @@ console.log( newPerson == austinBourdier );
 
 // ------------------------------------------------------
 
-// so on the hand, while we can do this with no chaining:
+// so on the one hand, while we can do this with no chaining:
 var austinBourdier = new Human();
 
 austinBourdier.setName('Austin');
@@ -88,7 +89,7 @@ austinBourdier.setHairColor('Brown');
 austinBourdier.save();
 
 
-// we can simplify our code by not storing our new object in a variable and creating these methods on the object itself.
+// we can simplify our code by not storing our new object in a variable by invoking these methods on the object itself.
 // ------------- METHOD CHAINING ---------------
 
 // implementing the chaining pattern:
