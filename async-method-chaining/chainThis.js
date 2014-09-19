@@ -40,7 +40,7 @@ austinBourdier.setName('Austin'); // => undefined
 
 // ------------------------------------------------------
 
-// here's the same example as above, only with a verbose method chaining pattern
+// here's the same example as above, only each method will return its reference to 'this'
 
 var Human = function() {
   this.name = 'Scott';
