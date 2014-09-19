@@ -7,7 +7,7 @@ Mozilla Docs
 
 ------------------------------------------------------------------------
 
-**Chaining methods**, also known as the **cascading technique**, refer to repeatedly calling one method after another on an object, in one continuous line of code. If you looked under the hood of jQuery or Socket.io, this is what you'd see.
+**Method chaining**, also known as the **cascading technique**, refer to repeatedly calling one method after another on an object, in one continuous line of code. If you looked under the hood of jQuery or Socket.io, this is what you'd see.
 
 It's also become increasingly common to see this pattern in vanilla JS.
 
