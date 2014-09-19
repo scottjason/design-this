@@ -52,5 +52,11 @@ Mozilla Docs, Blogs, Books and Wiki.
 - functional expressions
 - **closures, nested functions and variable preservation**
 
+------------------------------------------------------------------------
+- **method chaining**
+- method chaining
+- objects with chainable methods
+- **method chaining and the module pattern**
+
 
  
