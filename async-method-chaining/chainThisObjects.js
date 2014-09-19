@@ -54,13 +54,13 @@ var userModule = {
     },
     formatUser: function() {
         if ( this.targetUser ) {
-            this.targetUser.fullName = capitalize( this.targetUser.firstName + ' ' + capitalize( this.targetUser.lastName ) );
+            this.targetUser.fullName = ( capitalize( this.targetUser.firstName ) + ' ' + capitalize( this.targetUser.lastName ) );
         }
         return this;
     },
     renderUser: function() {
         if( this.targetUser ){
-             console.log( this.targetUser.fullName, this.targetUser.email, this.targetUser.id )
+             console.log( this.targetUser.fullName, this.targetUser.email, this.targetUser.id );
         }
     }
 };
