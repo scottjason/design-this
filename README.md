@@ -53,7 +53,7 @@ Mozilla Docs, Blogs, Books and Wiki.
 - **closures, nested functions and variable preservation**
 
 ------------------------------------------------------------------------
-- **method chaining**
+- **/async-method chaining**
 - method chaining
 - objects with chainable methods
 - **method chaining and the module pattern**
