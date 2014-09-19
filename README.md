@@ -54,9 +54,10 @@ Mozilla Docs, Blogs, Books and Wiki.
 
 ------------------------------------------------------------------------
 
-**/async-method chaining**
-- method chaining
+**/async-method-chaining**
+- method chaining / cascading technique
 - objects with chainable methods
+- return **this**
 - **method chaining and the module pattern**
 
 
