@@ -51,14 +51,14 @@ var userModule = {
             }
         }
         return this;
-        // "this" references the current object
+        // "this" references the object that this function is a method of
     },
     formatUser: function() {
         if ( this.targetUser ) {
             this.targetUser.fullName = ( capitalize( this.targetUser.firstName ) + ' ' + capitalize( this.targetUser.lastName ) );
         }
         return this;
-        // "this" references the current object
+        // "this" references the object that this function is a method of
     },
     renderUser: function() {
         if( this.targetUser ){
