@@ -85,8 +85,6 @@ var austinBourdier = new Human();
 austinBourdier.setName('Austin');
 austinBourdier.setGender('Male');
 austinBourdier.setHairColor('Brown');
-
-
 austinBourdier.save();
 
 
